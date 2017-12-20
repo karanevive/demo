@@ -29,7 +29,7 @@ public class HelloControllerTest {
 
 	  mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
-          .andExpect(content().string(equalTo("Greetings!! Karan Arora")));
+          .andExpect(content().string(equalTo("Greetings!! Karan Arora, push it")));
 
 	}
 
