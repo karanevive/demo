@@ -16,8 +16,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
-@AutoConfigureMockMvc
+@SpringBootTest        // we are asking for the whole application context to be created.
+@AutoConfigureMockMvc  // Use of the @AutoConfigureMockMvc together with @SpringBootTest is to inject a MockMvc instance.
 public class HelloControllerTest {
 
 	@Autowired
